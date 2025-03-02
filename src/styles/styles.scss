@@ -1,0 +1,78 @@
+@use "../styles/variables.scss" as *;
+body {
+    font-family: Arial, sans-serif;
+    margin:0;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: $font-stack;
+  position: relative;
+}
+
+header {
+  background: $secondary-color;
+  padding: 1rem;
+  margin:2rem;
+  color: $font-color ;
+  position: absolute;
+  width: -webkit-fill-available;
+  z-index: 10;
+}
+
+main{
+    min-height: 800px;
+}
+
+footer {
+  background: $primary-color;
+  color: $secondary-color;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Responsive Design */
+// @media (max-width: 768px) {
+//   header {
+//     nav {
+//       .menu-toggle {
+//         display: block;
+//       }
+
+//       ul {
+//         display: none;
+//         flex-direction: column;
+//         position: absolute;
+//         top: 60px;
+//         left: 0;
+//         background: $primary-color;
+//         width: 100%;
+//         text-align: center;
+//         padding: 1rem 0;
+
+//         &.open {
+//           display: flex;
+//         }
+//       }
+//     }
+//   }
+
+//   .product-gallery {
+//     flex-direction: column;
+
+//     .product {
+//       width: 100%;
+//     }
+//   }
+// }
+
+// 
+.mt-50{
+  margin-top: 50px;
+}
+
+.mb-20{
+  margin-bottom: 20px;
+}
