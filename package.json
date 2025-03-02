@@ -1,9 +1,12 @@
 {
+  "homepage": "https://github.com/Bindiya21/farm-app",
   "name": "my-react-app",
   "version": "1.0.0",
   "description": "A ReactJS project set up from scratch.",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build" ,
     "start": "webpack serve --open",
     "build": "webpack --mode production"
   },
@@ -17,6 +20,7 @@
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.0",
     "css-loader": "^6.11.0",
+    "gh-pages": "^6.3.0",
     "html-webpack-plugin": "^5.0.0",
     "sass": "^1.85.1",
     "sass-loader": "^16.0.5",
