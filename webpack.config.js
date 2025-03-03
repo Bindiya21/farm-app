@@ -1,19 +1,19 @@
 const path = require("path");
-// const HtmlWebpackPlugin = require("html-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.js",
-  // output: {
-  //   path: path.resolve(__dirname, "dist"),
-  //   filename: "bundle.js",
-  //   clean: true,
-  // },
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
-    publicPath: "/", // Ensure paths work properly
     clean: true,
-  },  
+  },
+  // output: {
+  //   path: path.resolve(__dirname, "dist"),
+  //   filename: "bundle.js",
+  //   publicPath: "/", // Ensure paths work properly
+  //   clean: true,
+  // },  
   module: {
     rules: [
       {
@@ -42,11 +42,11 @@ module.exports = {
       
     ],
   },
-  // plugins: [
-  //   new HtmlWebpackPlugin({
-  //     template: "./public/index.html",
-  //   }),
-  // ],
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "./index.html",
+    }),
+  ],
   devServer: {
     static: "./dist",
     hot: true,
