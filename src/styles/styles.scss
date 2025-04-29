@@ -11,6 +11,60 @@ body {
   position: relative;
 }
 
+.contact {
+  padding: 100px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+
+  h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    label {
+      display: block;
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 0.5rem;
+      text-align: left;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+
+    button {
+      background-color: #007bff;
+      color: #fff;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+}
+
 header {
   background: $secondary-color;
   padding: 1rem;
@@ -19,6 +73,8 @@ header {
   position: absolute;
   width: -webkit-fill-available;
   z-index: 10;
+  box-shadow: 5px 5px 5px black;
+  background: lightgray;
 }
 
 main{

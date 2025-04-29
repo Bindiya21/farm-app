@@ -7,14 +7,11 @@ const Header = ({ menuOpen, setMenuOpen }) => (
           ☰
         </button>
         <ul className={menuOpen ? styles.open : ""}>
-          <li>Home</li>
+          <li><a href="/">Home</a></li>
           <li>About</li>
-          <li>Products</li>
-          <li>Contact</li>
+          <li><a href="/products">Products</a></li>
+          <li><a href="/contact">Contact</a></li>
         </ul>
-        <button className={styles.contact}>
-          Contact us --
-        </button>
       </nav>
     </header>
   );
