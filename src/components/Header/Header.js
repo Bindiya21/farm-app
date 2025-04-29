@@ -9,8 +9,8 @@ const Header = ({ menuOpen, setMenuOpen }) => (
         <ul className={menuOpen ? styles.open : ""}>
           <li><a href="/">Home</a></li>
           <li>About</li>
-          <li><a href="/products">Products</a></li>
-          <li><a href="/contact">Contact</a></li>
+          <li>Products</li>
+          <li>Contact</li>
         </ul>
       </nav>
     </header>
